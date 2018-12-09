@@ -17,8 +17,9 @@
 /* plain dark styling */
 html {
 	background-color: var(--color-dark);		/* dark background color */
-	color: white;		/* white text color */
-	font-family: sans-serif;		/* default serifless font */
+}
+body {
+	color: white;
 }
 
 /* selection coloring */
