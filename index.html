@@ -38,7 +38,7 @@
 		<div class="block-padded align-left">
 			<h2 class="align-center wow fadeIn">Block with default background</h2>
 			<br>
-			<div class="wow slideInLeft">
+			<div class="wow fadeIn">
 				<p>Example text aligned left.</p>
 				<a href="#">Example Link</a>
 			</div>
@@ -56,10 +56,32 @@
 		<div class="block-padded background-dark align-right">
 			<h2 class="align-center wow fadeIn">Block with dark background</h2>
 			<br>
-			<div class="wow slideInRight">
+			<div class="wow fadeIn">
 				<p>Example text aligned right.</p>
 				<a href="#">Example Link</a>
 			</div>
+		</div>
+
+		<div class="block-padded background-light align-center">
+			<button class="btn btn-lg" id="button-Example">Example Scroller</button>
+		</div>
+
+		<div class="block-padded background-dark">
+		</div>
+		<div class="block-padded background-dark">
+		</div>
+		<div class="block-padded background-dark">
+		</div>
+		<div class="block-padded background-dark">
+		</div>
+		<div class="block-padded background-dark">
+		</div>
+
+		<div class="block-padded background-dark align-center" id="Example">
+			<h2 class="align-center wow fadeIn">Example</h2>
+		</div>
+
+		<div class="block-padded background-dark">
 		</div>
 		
 	</div>
@@ -68,16 +90,17 @@
 		<!-- Bootstrap -->						<script src="js/bootstrap.min.js"></script>
 		<!-- Wow -->							<script src="js/wow.min.js"></script>
 		<!-- activate Wow -->					<script>new WOW().init();</script>
+		<!-- Animate (not required by Wow) -->	<script src="js/animate.js"></script>
 		<!-- Felewin baseline -->				<script src="js/Felewin-baseline.js"></script>
 		<!-- smooth identifier scrolling -->
 		<script>
-			$("#button-Features").click(function()
+			$("#button-Example").click(function()
 			{
-				scrollTo("#Features", 400);
-			});
-			$("#button-Git-Started").click(function()
-			{
-				scrollTo("#Git-Started", 400);
+				scrollTo("#Example", 500);
+				setTimeout(function()
+				{
+					$('#Example').animateCss('flash');
+				}, 500);
 			});
 		</script>
 </body>
