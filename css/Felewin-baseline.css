@@ -245,3 +245,8 @@ button:focus {
 .block-padded {
 	padding: 2em;
 }
+
+/* Wow visible-before-animating bugfix */
+.wow {
+	visibility: hidden;
+}
