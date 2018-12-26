@@ -32,7 +32,7 @@
 	<div>
 		
 		<div class="block-padded align-center">
-			<h1 class="align-center wow slideInDown"><a href="http://hunterbobeck.me/" target="blank">Felewin</a> <span class="italicized">Website <span class="weight-bold">Template</span></span></h1>
+			<h1 class="align-center wow slideInDown" id="top"><a href="http://hunterbobeck.me/" target="blank">Felewin</a> <span class="italicized">Website <span class="weight-bold">Template</span></span></h1>
 		</div>
 		
 		<div class="block-padded align-left">
@@ -96,14 +96,17 @@
 		<!--<script>
 			document.title += " | "+(location.pathname.substring(location.pathname.lastIndexOf("/") + 1)).replace(".html", "");
 		</script>-->
-		<!-- smooth identifier scrolling -->
+		<!-- Example button click: smooth identifier scrolling, delayed animation, delayed smooth identifier scrolling -->
 		<script>
 			$("#button-Example").click(function()
 			{
 				scrollTo("#Example", 500);
 				setTimeout(function()
 				{
-					$('#Example').animateCss('flash');
+					$('#Example').animateCss('flash', function()
+					{
+						scrollTo("#top", 500);
+					});
 				}, 500);
 			});
 		</script>
