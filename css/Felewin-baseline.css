@@ -98,6 +98,14 @@ button:focus {
 	user-drag: none;
 }
 
+/* positioning */
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+
 /* alignment */
 .align-left {
 	text-align: left;
