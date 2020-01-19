@@ -40,7 +40,6 @@
     --color-link-Moon-Motion: var(--color-Moon-Motion-icon-light);
     --color-link-Moon-Motion-hovered: var(--color-Moon-Motion-icon-dark);
     --color-Lunity: #c95eff; /* (a color from Iridescence) */
-    --color-Lunity-brighter: #D874E6;
     --color-Lunity-icon-light: #e471f2;
     --color-Lunity-icon-dark: #920bf0;
     --color-link-Lunity: var(--color-Lunity-icon-light);
