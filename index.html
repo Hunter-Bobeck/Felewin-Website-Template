@@ -15,7 +15,6 @@
 	<!-- CSS -->
 		<!-- Reset -->						<link rel="stylesheet" href="css/reset.css">
 		<!-- Bootstrap -->					<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Font Awesome -->				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<!-- Animate (required by Wow) -->	<link rel="stylesheet" href="css/animate.css">
 		<!-- Hover -->						<link rel="stylesheet" href="css/hover-min.css">
 		<!-- Starfield -->					<link rel="stylesheet" href="css/starfield.css">
@@ -26,7 +25,7 @@
 		<!-- custom - identifiers -->		<link rel="stylesheet" href="css/custom/identifiers.css">
 
 	<!-- preJS -->
-		<!-- none -->
+		<!-- Font Awesome -->				<script src="https://kit.fontawesome.com/4d6df66743.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="background-dark">
@@ -34,7 +33,7 @@
 		
 		<!-- title block -->
 		<div class="block-padded align-center">
-			<h1 class="wow slideInDown" id="top"><a href="http://hunterbobeck.me/" target="blank">Felewin</a> <span class="italicized">Website <span class="weight-bold">Template</span></span></h1>
+			<h1 class="wow slideInDown"><a href="http://hunterbobeck.me/" target="blank">Felewin</a> <span class="italicized">Website <span class="weight-bold">Template</span></span></h1>
 		</div>
 		
 		<!-- lefted block -->
@@ -68,17 +67,15 @@
 		</div>
 		
 		<!-- scroller block -->
-		<div class="block-padded background-light align-center">
-			<button class="btn btn-lg" id="button-Example">Example Scroller</button>
+		<div class="block-padded background-Felewin-dark-to-Felewin-bright align-center">
+			<button is="scroller-button" class="btn btn-lg" targetIdentifier="Scroller-Target-Example">Scroller Example</button>
 		</div>
 		
-		<!-- scrolling padding -->
-		<div style="padding: 15em;">
-		</div>
+		<multiple-linebreaks count="30"></multiple-linebreaks>
 		
 		<!-- scrolling example block -->
-		<div class="block-padded background-dark align-center" id="Example">
-			<h2 class="align-center wow fadeIn">Example</h2>
+		<div class="block-padded background-dark align-center" id="Scroller-Target-Example">
+			<h2 class="align-center wow fadeIn">Scroller Target Example</h2>
 		</div>
 		
 		<!-- scrolling dark block -->
@@ -98,19 +95,5 @@
 		<!-- Starfield -->						<script src="js/starfield.js"></script>
 		<!-- Felewin baseline -->				<script src="js/Felewin-baseline.js"></script>
 		<!-- Felewin subpage titling -->		<script src="js/Felewin-subpage-titling.js"></script>
-		<!-- Example button click: smooth identifier scrolling, delayed animation, delayed smooth identifier scrolling -->
-		<script>
-			$("#button-Example").click(function()
-			{
-				scrollTo("#Example", 500);
-				setTimeout(function()
-				{
-					$('#Example').animateCss('flash', function()
-					{
-						scrollTo("#top", 500);
-					});
-				}, 500);
-			});
-		</script>
 </body>
 </html>
