@@ -39,33 +39,3 @@ if ('customElements' in window)
 {
 	customElements.define('content-at', ContentAt);
 }
-
-// element: sets the title to that found in (the head of) the HTML at the given (local) path, then removes itself //
-class MatchTitleAt extends HTMLElement
-{
-	get path()
-	{
-		return this.getAttribute('path') || '';
-	}
-	
-	connectedCallback()
-	{
-		this.innerHTML =
-		`
-			<iframe src="${this.path}" style="display: none"></iframe>
-		`;
-		
-		const frame = this.querySelector('iframe');
-		
-		frame.addEventListener('load', event =>
-		{
-			document.title = frame.contentDocument.title;
-			
-			frame.remove();
-		});
-	}
-}
-if ('customElements' in window)
-{
-	customElements.define('match-title-at', MatchTitleAt);
-}
