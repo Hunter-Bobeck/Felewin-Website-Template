@@ -70,6 +70,12 @@
     --color-Kaarii-saturated: #f304b5;
     --color-link-Kaarii: var(--color-Kaarii);
     --color-link-Kaarii-hovered: var(--color-Kaarii-saturated);
+    --color-Ravens-Nest-highlight: var(--color-Felewin-lush)/*Wix: #d2fd62*/;
+    --color-Ravens-Nest: #99da61;
+    --color-Ravens-Nest-dark: #331c0f;
+    --color-link-Ravens-Nest: var(--color-Ravens-Nest);
+    --color-link-Ravens-Nest-hovered: #70aa3d;
+    --color-link-Ravens-Nest-active: var(--color-Ravens-Nest-highlight);
     /* other brands */
     --color-Itch: #fa5c5c;
     --color-link-Itch: var(--color-Itch);
@@ -150,6 +156,14 @@
 }
 .background-Felewin-blue-darkest {
 	background-color: var(--color-Felewin-blue-darkest);
+	color: white;
+}
+.background-Ravens-Nest {
+	background-color: var(--color-Ravens-Nest);
+	color: white;
+}
+.background-Ravens-Nest-dark {
+	background-color: var(--color-Ravens-Nest-dark);
 	color: white;
 }
 .background-Moon-Motion {
@@ -268,6 +282,9 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('land
 }
 .color-Kaarii-saturated {
 	color: var(--color-Kaarii-saturated);
+}
+.color-Ravens-Nest {
+	color: var(--color-Ravens-Nest);
 }
 
 
@@ -417,6 +434,9 @@ button:focus {
 	-o-user-drag: none;
 	user-drag: none;
 }
+.pointer-ignorant {
+	pointer-events: none;
+}
 
 /* positioning */
 .relative {
@@ -429,6 +449,9 @@ button:focus {
 /* sizing */
 .fullwidth {
 	width: 100%;
+}
+.fullheight {
+	height: 100%;
 }
 
 /* margining */
@@ -719,6 +742,15 @@ button:focus {
 }
 .link-Kaarii:hover {
 	color: var(--color-link-Kaarii-hovered);
+}
+.link-Ravens-Nest {
+	color: var(--color-link-Ravens-Nest);
+}
+.link-Ravens-Nest:hover {
+	color: var(--color-link-Ravens-Nest-hovered);
+}
+.link-Ravens-Nest:active {
+    color: var(--color-link-Ravens-Nest-active);
 }
 .link-One-Giant-Leap {
 	color: var(--color-link-One-Giant-Leap);
